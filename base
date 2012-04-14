@@ -1,4 +1,5 @@
 #!/bin/sh
 
+cd ..
 unset GIT_DIR
 git reset --hard
