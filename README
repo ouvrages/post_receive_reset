@@ -1,0 +1,5 @@
+Sample post-receive git scripts.
+
+To install, copy one of them to .git/hooks/post-receive and make it
+executable.
+
