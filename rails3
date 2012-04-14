@@ -1,0 +1,16 @@
+#!/bin/bash
+
+set -e
+
+unset GIT_DIR
+git reset --hard
+
+export RAILS_ENV=production
+
+bundle install --deployment --without="development test"
+bundle exec rake db:migrate
+bundle exec rake assets:precompile
+
+touch tmp/restart.txt
+
+# curl http://website.com/
