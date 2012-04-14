@@ -3,3 +3,6 @@ Sample post-receive git scripts.
 To install, copy one of them to .git/hooks/post-receive and make it
 executable.
 
+For example:
+    wget -O .git/hooks/post-receive https://raw.github.com/ouvrages/post_receive_reset/master/rails3
+    chmod +x .git/hooks/post-receive
